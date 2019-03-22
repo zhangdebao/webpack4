@@ -9,10 +9,10 @@ module.exports = {
     let HOST = ''
     switch (BRANCH) {
       case 'dev' :
-        HOST = 'http://localhost:8080'
+        HOST = 'http://0.0.0.0:8080'
         break
       default :
-        HOST = ''
+        HOST = 'http://xxx.xxx.xxx.xxx:8080'
     }
     return HOST
   }
