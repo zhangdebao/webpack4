@@ -1208,4 +1208,10 @@ npm audit fix
 ```
 4. 在package.json中配置Husky
 ```
+"husky": {
+  "hooks": {
+    "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+  }
+}
 ```
+5. 配置提交之前检查eslint

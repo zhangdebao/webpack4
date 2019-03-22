@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { get, post } from './request.js'
+import { post } from './request.js'
 Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
