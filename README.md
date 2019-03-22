@@ -1185,7 +1185,6 @@ npm install -g @commitlint/config-conventional @commitlint/cli
 
 >> 注意冒号后面有空格。
 type
-
 >>用于说明 commit 的类别，只允许使用下面7个标识。
 feat：新功能（feature）
 fix：修补bug
