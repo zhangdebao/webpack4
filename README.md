@@ -1195,9 +1195,17 @@ test：增加测试
 chore：构建过程或辅助工具的变动
 如果type为feat和fix，则该 commit 将肯定出现在 Change log 之中。
 
-2. 根目录下新建配置配件
+2. 根目录下新建配置文件commitlint.config.js
 ```
 module.exports = {
   extends: ['@commitlint/config-conventional']
 }
+```
+3. 配合Husky
+```
+npm install husky --save-dev
+npm audit fix
+```
+4. 在package.json中配置Husky
+```
 ```
