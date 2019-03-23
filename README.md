@@ -11,7 +11,7 @@ npm install eslint --save-dev
 ```
 eslint官方提供了3种预安装包, 使用[eslint-config-standard](https://www.npmjs.com/package/eslint-config-standard)
 ```
-npm install --save-dev eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node
+npm install --save-dev eslint eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node eslint-plugin-html eslint-friendly-formatter babel-eslint
 ```
 初始化eslint文件
 ```
@@ -1215,3 +1215,27 @@ npm audit fix
 }
 ```
 5. 配置提交之前检查eslint
+```
+"husky": {
+  "hooks": {
+    "pre-commit": "eslint \"src/**/*.{js,ts,vue}\""
+  }
+
+}
+```
+## Vue组件自动化测试---UI测试框架storybook
+>###### # 全局安装
+```
+npm i -g @storybook/cli
+```
+>###### # 根路径下，初始化storiesbook初始化
+```
+npx -p @storybook/cli sb init
+npm install --save core-js@2
+npm install --save core-js@3
+```
+>###### # 项目目录下获取 Storybook
+```
+getstorybook
+npm run storebook
+```

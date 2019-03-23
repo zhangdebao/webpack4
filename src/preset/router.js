@@ -1,5 +1,5 @@
 import VueRouter from 'vue-router'
-import Home from '@/components/home.vue'
+import Home from '@/views/home.vue'
 const router = new VueRouter({
   routes: [
     {
