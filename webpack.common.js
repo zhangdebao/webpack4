@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin') // 引入HtmlWebpackPlu
 const ExtractTextPlugin = require('extract-text-webpack-plugin') // 引入分离插件
 const VueLoaderPlugin = require('vue-loader/lib/plugin') // vue-loader插件
 module.exports = {
+  mode: 'development',
   entry: path.join(__dirname, '/src/main.js'), // 入口文件
   output: {
     path: path.join(__dirname, '/dist'), // 打包后的文件存放的地方

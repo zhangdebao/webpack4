@@ -222,7 +222,6 @@ module.exports = {
   }
 }
 ```
-
 在src文件夹下新建css文件夹，在css文件夹下新建index.css文件
 并且在index.js中引入
 ```
@@ -345,8 +344,7 @@ module.exports = {
   </body>
 </html>
 ```
-
-webpack.config.js中我们引入了HtmlWebpackPlugin插件，并配置了引用了我们设置的模板，如下：
+>webpack.config.js中我们引入了HtmlWebpackPlugin插件，并配置了引用了我们设置的模板，如下：
 ```
 // webpack.config.js
 const path = require('path') // 路径处理模块
@@ -843,11 +841,13 @@ module.exports = {
   ...
 }
 ```
+
 >引入vuex, 对全局状态进行管理
 ```
 npm install vuex -S
 ```
-在preset文件夹下创建store.js
+>在preset文件夹下创建store.js
+
 ```
 import Vue from 'vue'
 import Vuex from 'vuex'
@@ -875,6 +875,7 @@ const store = new Vuex.Store({
 })
 export default store
 ```
+
 在main.js中引入store
 ```
 // main.js
@@ -1180,11 +1181,11 @@ new Vue({
 ```
 npm install -g @commitlint/config-conventional @commitlint/cli
 ```
->> Commit message格式
-<type>: <subject>
 
->> 注意冒号后面有空格。type 用于说明 commit 的类别，只允许使用下面7个标识。
+>Commit message格式  
+type: subject
 
+>注意冒号后面有空格。type 用于说明 commit 的类别，只允许使用下面7个标识。
 > - feat：新功能（feature）
 > - fix：修补bug
 > - docs：文档（documentation）
@@ -1194,18 +1195,18 @@ npm install -g @commitlint/config-conventional @commitlint/cli
 > - chore：构建过程或辅助工具的变动
 如果type为feat和fix，则该 commit 将肯定出现在 Change log 之中。
 
-2. 根目录下新建配置文件commitlint.config.js
+2、根目录下新建配置文件commitlint.config.js
 ```
 module.exports = {
   extends: ['@commitlint/config-conventional']
 }
 ```
-3. 配合Husky
+3、配合Husky
 ```
 npm install husky --save-dev
 npm audit fix
 ```
-4. 在package.json中配置Husky
+4、在package.json中配置Husky
 ```
 "husky": {
   "hooks": {
@@ -1213,7 +1214,8 @@ npm audit fix
   }
 }
 ```
-5. 配置提交之前检查eslint
+
+5、配置提交之前检查eslint
 ```
 "husky": {
   "hooks": {
@@ -1222,20 +1224,22 @@ npm audit fix
 
 }
 ```
+
 ## Vue组件自动化测试---UI测试框架storybook
->###### # 全局安装
+>######  全局安装
 ```
 npm i -g @storybook/cli
 ```
->###### # 根路径下，初始化storiesbook初始化
+>###### 根路径下，初始化storiesbook初始化
 ```
 npx -p @storybook/cli sb init
 npm install --save core-js@2
 npm install --save core-js@3
 ```
->###### # 项目目录下获取 Storybook
+>###### 项目目录下获取 Storybook
 
 ```
 getstorybook
+
 npm run storebook
 ```
